@@ -1,0 +1,363 @@
+/*Must to include*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/*Initial assigned properties*/
+
+html,
+body {
+  background-color: #fff;
+  color: #556;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serifS;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h2 {
+  font-size: 6rem;
+  padding: 5rem 0rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+span {
+  font-size: 5rem;
+}
+
+/*Navigation bar details*/
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-image: url(speech.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 55rem;
+}
+
+.liberty-logo {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 20rem;
+  cursor: pointer;
+}
+
+.nav-class {
+  margin-left: auto;
+}
+
+.nav-class ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-class li {
+  padding: 2rem;
+}
+
+.nav-class a {
+  transition-duration: 0.1s;
+  font-weight: 600;
+}
+
+.nav-class a:hover {
+  color: rgba(26, 20, 20, 0.644);
+  border-bottom: 0.3rem solid rgba(26, 20, 20, 0.644);
+}
+
+.hname {
+  grid-column: span 2;
+  justify-self: left;
+  margin: auto;
+  margin-left: 2%;
+}
+
+.hname h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 20rem;
+  font-weight: 800;
+  text-shadow: 3px 3px 3px black;
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 45rem;
+    background-position-x: 60%;
+    background-position-y: 0%;
+    background-size: 300%;
+    display: block;
+  }
+
+  .liberty-logo {
+    width: 13rem;
+  }
+
+  .nav-class ul {
+    display: block;
+  }
+
+  .nav-class a {
+    margin: 0rem;
+    padding: 0.3rem;
+    color: black;
+    border: 1px solid black;
+    border-radius: 13px;
+    line-height: 0px;
+    font-size: 1.5rem;
+  }
+
+  .nav-class a:hover {
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+  }
+
+  .hname h1 {
+    font-size: 9rem;
+    font-weight: 800;
+  }
+}
+
+/*Event details*/
+
+.detail-class h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: auto;
+  color: black;
+}
+
+.detail-class h4 {
+  margin-right: auto;
+  margin-left: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.detail-class p {
+  margin: 3rem;
+  margin-bottom: 10rem;
+  text-align: justify;
+}
+
+@media (max-width: 480px) {
+  .detail-class h2 {
+    font-size: 4rem;
+  }
+
+  .detail-class h4 {
+    font-size: 2rem;
+  }
+
+  .detail-class p {
+    font-size: 2rem;
+  }
+}
+
+/*Event Outcomes*/
+
+.outcome-class {
+  background-color: #ffffcc;
+  padding-bottom: 10rem;
+}
+
+.outcome-class h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 2rem;
+  color: black;
+}
+
+.tab-class {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  margin: 3%;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.tab1-class h3 {
+  text-align: left;
+}
+
+.tab2-class h3 {
+  text-align: left;
+}
+
+.tab3-class h3 {
+  text-align: left;
+}
+
+/*Caption*/
+
+.caption {
+  margin: 10rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: black;
+  text-align: center;
+}
+
+.caption a {
+  text-decoration-line: overline;
+  font-size: 4rem;
+  color: #556;
+}
+
+.caption a:hover {
+  color: #832323;
+}
+@media (max-width: 1200px) {
+  .tab-class {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1%;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tab-class {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    margin: 1%;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .outcome-class h2 {
+    font-size: 5rem;
+  }
+
+  .tab1-class h3,
+  .tab2-class h3,
+  .tab3-class h3 {
+    padding: 0%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .caption h2 {
+    font-size: 5rem;
+  }
+
+  .caption a {
+    font-size: 3rem;
+  }
+}
+/*Footer*/
+
+.footer {
+  margin: auto;
+  background: #262626;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mail-class {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.mail-class p {
+  font-size: 1.5rem;
+}
+
+.mail-class a {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.644);
+}
+
+.icon-class {
+  margin-left: auto;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+
+.icon-class p {
+  font-size: 1.6rem;
+}
+
+.last {
+  display: flex;
+}
+
+.last li :nth-child(1),
+.last li :nth-child(2),
+.last li :nth-child(3),
+.last li :nth-child(4) {
+  width: 2rem;
+  padding: 0rem 0.1rem;
+}
+
+.copyright-class {
+  grid-column: span 2;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.copyright-class p {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 480px) {
+  .footer p,
+  .footer a {
+    font-size: 1rem;
+  }
+
+  .last p {
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
+
+  .last li :nth-child(1),
+  .last li :nth-child(2),
+  .last li :nth-child(3),
+  .last li :nth-child(4) {
+    width: 1.5rem;
+    margin-top: 0rem;
+  }
+}
+
